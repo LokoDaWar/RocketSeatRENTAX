@@ -35,7 +35,29 @@ export class CreateUsers1617982126750 implements MigrationInterface {
           },
 
           {
+            name: "typeDocument",
+            type: "varchar",
+          },
+
+          {
+            name: "document",
+            type: "varchar",
+            isUnique: true,
+          },
+
+
+          {
             name: "driver_license",
+            type: "varchar",
+          },
+
+          {
+            name: "cellPhone",
+            type: "varchar",
+          },
+
+          {
+            name: "country",
             type: "varchar",
           },
 
@@ -46,7 +68,19 @@ export class CreateUsers1617982126750 implements MigrationInterface {
           },
 
           {
+            name: "permissions",
+            type: "varchar",
+            isNullable: true
+          },
+
+          {
             name: "created_at",
+            type: "timestamp",
+            default: "now()",
+          },
+
+          {
+            name: "updated_at",
             type: "timestamp",
             default: "now()",
           },
